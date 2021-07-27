@@ -1,5 +1,6 @@
 .imchaezip_header_logo {
-    margin:2rem 0; font-family: 'Pacifico', cursive;
+    margin:2rem 0;
+    font-family: 'Pacifico', cursive;
 }
 
 .imchaezip_header_button {
@@ -7,14 +8,23 @@
 }
 
 .imchaezip_footer_logo {
-    margin:1.5rem 0; font-family: 'Pacifico', cursive;
+    margin:1.5rem 0;
+    font-family: 'Pacifico', cursive;
 }
 
 .imchaezip_footer_button {
     margin-top:2rem;
 }
 
+
 .mw-500 {
     max-width: 500px;
     padding: 1rem 1.5rem;
+}
+
+.profile_image {
+    height: 12rem;
+    width: 12rem;
+    border-radius: 20rem;
+    object-fit: cover;
 }
