@@ -1,4 +1,4 @@
-{% load static %}
+{%  load static %}
 
 <head>
     <meta charset="UTF-8">
@@ -16,35 +16,36 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="{% static 'base.css'%}">
+    {# Default CSS Link #}
+    <link rel="stylesheet" type="text/css" href="{% static 'base.css' %}">
 
     {# MATERIAL ICONS LINK #}
-    <link href=“https://fonts.googleapis.com/css2?family=Material+Icons”
-      rel=“stylesheet”>
-
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
+      rel="stylesheet">
 
     <style>
-    @font-face {
-        font-family: 'NanumSquareR';
-        src: local('NanumSquareR'),
-        url("{% static 'fonts/NanumSquareR.otf' %}") format("opentype");
-    }
-    @font-face {
-        font-family: 'NanumSquareEB';
-        src: local('NanumSquareEB'),
-        url("{% static 'fonts/NanumSquareEB.otf' %}") format("opentype");
-    }
-    @font-face {
-        font-family: 'NanumSquareB';
-        src: local('NanumSquareB'),
-        url("{% static 'fonts/NanumSquareB.otf' %}") format("opentype");
-    }
-    @font-face {
-        font-family: 'NanumSquareL';
-        src: local('NanumSquareL'),
-        url("{% static 'fonts/NanumSquareL.otf' %}") format("opentype");
-    }
+        @font-face {
+            font-family: 'NanumSquareR';
+            src: local('NanumSquareR'),
+            url("{% static 'fonts/NanumSquareR.otf' %}") format("opentype");
+        }
+        @font-face {
+            font-family: 'NanumSquareEB';
+            src: local('NanumSquareEB'),
+            url("{% static 'fonts/NanumSquareEB.otf' %}") format("opentype");
+        }
+        @font-face {
+            font-family: 'NanumSquareB';
+            src: local('NanumSquareB'),
+            url("{% static 'fonts/NanumSquareB.otf' %}") format("opentype");
+        }
+        @font-face {
+            font-family: 'NanumSquareL';
+            src: local('NanumSquareL'),
+            url("{% static 'fonts/NanumSquareL.otf' %}") format("opentype");
+        }
     </style>
+
 </head>
 
 
