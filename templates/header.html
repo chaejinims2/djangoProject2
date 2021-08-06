@@ -3,7 +3,11 @@
         <h1> ImChae.zip</h1>
     </div>
     <div class="imchaezip_header_button">
-        <span>nav1</span>
+        <span>
+            <a href="{% url 'articleapp:list' %}">
+                Article
+            </a>
+        </span>
         <span>nav2</span>
 
         {% if not user.is_authenticated %}
