@@ -5,12 +5,17 @@
     <div class="imchaezip_header_button">
         <span>
             <a href="{% url 'articleapp:list' %}">
-                Article
+                Articles
             </a>
         </span>
-        <span>nav2</span>
+        <span>
+            <a href="{%  url 'articleapp:list' %}">
+                Projects
+            </a>
 
+        </span>
         {% if not user.is_authenticated %}
+
         <span>
             <a href="{% url 'accountapp:login' %}">
                 Login

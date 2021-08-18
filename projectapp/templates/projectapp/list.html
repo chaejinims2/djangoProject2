@@ -10,8 +10,6 @@
         }
 
         .container div {
-          width: 45%;
-            max-width: 200px;
           background-color: antiquewhite;
           display: flex;
           justify-content: center;
@@ -21,7 +19,9 @@
             {#box-shadow: 0 0 1rem gray;#}
         }
         .container img{
-            width: 100%;
+            width: 7rem;
+            height: 7rem;
+            object-fit: cover;
             border-radius: 1rem;
         }
 
@@ -33,9 +33,9 @@
         {% for project in project_list %}
             <div>
                 <a href="{% url 'projectapp:detail' pk=project.pk %}">
-                    <img src="{{ project.image.url }}" alt=""
+                    <img src="{{ project.image.url }}" alt="">
                 </a>
-{#                <span class="my-2 NNS_B">{{ project.name }}</span>#}
+                <span class="my-2 NNS_B">{{ project.name | trucatechars:10 }}</span>
             </div>
         {% endfor %}
     </div>
