@@ -7,8 +7,10 @@
             {#      게시글 제목, 글쓴이, 작성일자       #}
             <h1 class="NNS_B">{{ target_article.title }}</h1>
             <div>
-                <a href="#"
-                   class="material-icons">
+                <a href="{% url 'likeapp:article_like' article_pk=target_article.pk%}"
+                   class="material-icons"
+                   style="vertical-align: middle; color: #f77;
+                   font-size: 1.4rem;">
                     favorite
                 </a>
             </div>
