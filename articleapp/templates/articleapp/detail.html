@@ -6,6 +6,12 @@
         <div>
             {#      게시글 제목, 글쓴이, 작성일자       #}
             <h1 class="NNS_B">{{ target_article.title }}</h1>
+            <div>
+                <a href="#"
+                   class="material-icons">
+                    favorite
+                </a>
+            </div>
             <h4>{{ target_article.writer.profile.nickname }}</h4>
             <p>{{ target_article.created_at }}</p>
         </div>
