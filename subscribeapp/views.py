@@ -10,7 +10,6 @@ from articleapp.models import Article
 from projectapp.models import Project
 from subscribeapp.models import Subscription
 
-
 @method_decorator(login_required, 'get')
 class SubscriptionView(RedirectView):
 
@@ -21,11 +20,10 @@ class SubscriptionView(RedirectView):
         subscription = Subscription.objects.filter(user=user,
                                                    project=project)
 
-        if subscription.exist():
+        if subscription.exists():
             subscription.delete()
         else:
-
-            subscription(user=user, project=project).save()
+            Subscription(user=user, project=project).save()
 
         return super().get(request, *args, **kwargs)
 
