@@ -2,6 +2,8 @@ FROM python:3.9.0
 
 WORKDIR /home/
 
+RUN echo 'dkssudgktpdyd'
+
 RUN git clone https://github.com/chaejinims2/djangoProject2.git
 
 WORKDIR /home/djangoProject2
