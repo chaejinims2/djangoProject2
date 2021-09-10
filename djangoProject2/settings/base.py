@@ -19,7 +19,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent # 부모 경로를 찾는 것
 
 env_list = dict()
 
-local_env = open(os.path.join(BASE_DIR, '.env'))
+local_env = open(os.path.join(BASE_DIR, '../.env'))
 
 while True:
     line = local_env.readline()
@@ -101,15 +101,6 @@ TEMPLATES = [
 WSGI_APPLICATION = 'djangoProject2.wsgi.application'
 
 
-# Database
-# https://docs.djangoproject.com/en/3.2/ref/settings/#databases
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
 
 
 # Password validation
