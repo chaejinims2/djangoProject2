@@ -9,7 +9,7 @@ WORKDIR /home/
 
 # 아무리 새로운 소스코드를 올리더라도 도커는 기존의 소스코드에 문제가 없다고 판단하여 깃클론을 리빌드하지 않는다.
 # 이 때문에 의미없는 구문인 echo를 넣어주는 것
-RUN echo 'sssdfsdf'
+RUN echo 'ssdsvsdf'
 
 RUN git clone https://github.com/chaejinims2/djangoProject2.git
 
